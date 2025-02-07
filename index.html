@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharaoh's Code</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pharaoh's Code</h1>
+        
+        <div class="upload-section">
+            <div class="file-input">
+                <input type="file" id="fileInput" accept="image/png">
+                <label for="fileInput">Choose CAPTCHA Image</label>
+            </div>
+            <button onclick="decodeCaptcha()">Decode CAPTCHA</button>
+        </div>
+        <div class="result-section">
+            <div class="preview-container">
+                <img id="preview" src="" alt="CAPTCHA Preview">
+            </div>
+            <div class="result-container">
+                <p id="result">Upload a CAPTCHA image to decode</p>
+            </div>
+        </div>
+        <div>
+            <h6>Team- Punk 327</h6>
+            <ul>
+                <li>Divyanshu Kannaujiya</li>
+                <li>Piyush Chundawat</li>
+                <li>Shubham Saini</li>
+            </ul>
+        
+        </div>
+        
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

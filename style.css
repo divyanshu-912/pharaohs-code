@@ -1,0 +1,155 @@
+:root {
+    --egyptian-gold: #DED18D;
+    --egyptian-bronze: #AA5725;
+    --egyptian-blue: #0C1F59;
+    --dark-bg: rgba(20, 20, 20, 0.95);
+    --shadow: rgba(0, 0, 0, 0.4);
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+                url("../pharaohs_bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--egyptian-gold);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background: var(--dark-bg);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px var(--shadow);
+    border: 2px solid var(--egyptian-gold);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: var(--egyptian-gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px var(--shadow);
+}
+
+.upload-section {
+    margin: 30px auto;
+    padding: 40px;
+    background: linear-gradient(145deg, 
+        rgba(34, 25, 15, 0.95), 
+        rgba(12, 31, 89, 0.95));
+    border: 2px solid var(--egyptian-gold);
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.file-input {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.file-input input[type="file"] {
+    display: none;
+}
+
+.file-input label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, 
+        var(--egyptian-gold), 
+        var(--egyptian-bronze));
+    color: #000;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px var(--shadow);
+}
+
+.file-input label:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--shadow);
+}
+
+.preview-container {
+    margin: 20px 0;
+}
+
+#preview {
+    max-width: 300px;
+    margin: 20px auto;
+    border: 3px solid var(--egyptian-gold);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(222, 209, 141, 0.3);
+    display: none;
+}
+
+.result-section {
+    font-family: monospace;
+    margin-top: 30px;
+    padding: 25px;
+    background: rgba(12, 31, 89, 0.3);
+    border-radius: 12px;
+    border: 1px solid var(--egyptian-bronze);
+}
+
+#result {
+    font-family: monospace;
+    font-size: 1.4em;
+    color: var(--egyptian-gold);
+    margin: 15px 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    text-shadow: 1px 1px 2px var(--shadow);
+}
+
+button {
+    padding: 15px 30px;
+    background: linear-gradient(135deg, 
+        var(--egyptian-gold), 
+        var(--egyptian-bronze));
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px var(--shadow);
+    margin-top: 20px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--shadow);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }   
+    .upload-section {
+        padding: 20px;
+    }    
+    button {
+        padding: 12px 25px;
+    }
+}
